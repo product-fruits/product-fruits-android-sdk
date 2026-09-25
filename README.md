@@ -1,7 +1,5 @@
 # Product Fruits Android SDK (Maven distribution)
 
-Public **Maven repository layout** for `com.productfruits:sdk`, published automatically from the private Android SDK repo (same idea as [product-fruits-ios-sdk](https://github.com/product-fruits/product-fruits-ios-sdk) for SPM).
-
 ## Documentation
 
 - **[Getting started](docs/getting-started.md)** — Gradle, config, identify, tracking, push  
@@ -50,7 +48,3 @@ and register `com.productfruits.sdk.ProductFruitsFirebaseMessagingService` as in
 
 - `maven-repo/` — standard Maven paths: `com/productfruits/sdk/<version>/sdk-<version>.aar`, `.pom`, etc.
 - **Git tags** `v*` on this repo mark releases (and match GitHub Releases with an attached `.aar` when the workflow runs).
-
-## Publishing (maintainers)
-
-Releases are pushed by CI from the private SDK repository when you push a tag `v1.2.3` or run the workflow manually with a version string. Required secret: `MOBILE_DEPLOYMENT_GITHUB_ACCESS_TOKEN` (PAT with push access to this repo).
